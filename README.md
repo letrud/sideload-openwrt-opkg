@@ -9,13 +9,13 @@ Run OpenWrt packages side-by-side with stock firmware on routers, NAS devices, a
 **From a system with HTTPS support** (Linux/Mac PC, or router with TLS-capable wget/curl):
 
 ```sh
-wget -O- https://raw.githubusercontent.com/letrud/sideload-openwrt-opkg/main/sideload-openwrt-opkg.sh | sh
+curl -fsSL https://raw.githubusercontent.com/letrud/sideload-openwrt-opkg/main/sideload-openwrt-opkg.sh | sh
 ```
 
 With options:
 
 ```sh
-wget -O- https://raw.githubusercontent.com/letrud/sideload-openwrt-opkg/main/sideload-openwrt-opkg.sh | sh -s -- -r /data/openwrt-opkg
+curl -fsSL https://raw.githubusercontent.com/letrud/sideload-openwrt-opkg/main/sideload-openwrt-opkg.sh | sh -s -- -r /data/openwrt-opkg
 ```
 
 **From a busybox-only router** (no TLS — most stock firmware):
